@@ -1,0 +1,11 @@
+body{
+    background: url('../trivia_images/f40.png') no-repeat center center fixed;
+    background-size: cover;
+}
+.container{
+    font-family: 'Righteous', cursive;
+    z-index: 5;
+}
+#gameBoard{
+    opacity: 0;
+}

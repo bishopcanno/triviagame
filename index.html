@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EricB_Trivia_Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link rel="stylesheet" href="assets/trivia_CSS_JS/trivia_style.css">
+
+</head>
+<body>
+    <div class="container" id="containerDiv">
+        <div class="row">
+            <div class="d-flex justify-content-center col-sm-12">
+                <h1 class="text-danger display-3">Burnin' Rubber Car Trivia</h1>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <div class="row" id="displayDiv">
+            <div class=" col-sm-12 d-flex justify-content-center">
+                <button class="bg-warning text-primary display-4" id="startButton">Start</button>
+            </div>
+        </div>
+        
+        <div id="gameBoard">
+            <div class="row text-warning" id="gameDivOne">
+                <div class="col-sm-12 d-flex justify-content-center display-4">
+                    <h3>What is the name of the engine, invented by Karl Benz, made famous by Porsche</h3>
+                </div>
+
+                <div class="col-sm-12 d-flex justify-content-center">
+                    <form action="">
+                        <input class="questionRadio" type="radio" name="questionAnswer1" value="false"> Wenkle
+                        <input class="questionRadio" type="radio" name="questionAnswer1" value="false"> Inline
+                        <input class="questionRadio" type="radio" name="questionAnswer1" value="true"> Boxer
+                    </form>
+                </div>
+            </div>
+
+            <div class="row text-primary" id="gameDivTwo">
+                <div class="col-sm-12 d-flex justify-content-center display-4">
+                    <h3>What is the proper name of the racetrack affectionately called the Green Hell</h3>
+                </div>
+
+                <div class="col-sm-12 d-flex justify-content-center">
+                    <form action="">
+                        <input class="questionRadio" type="radio" name="questionAnswer2" value="false"> La Sarthe
+                        <input class="questionRadio" type="radio" name="questionAnswer2" value="true"> Nürburgring-Nordschleife
+                        <input class="questionRadio" type="radio" name="questionAnswer2" value="false"> Mount Panorama Circuit
+                        <input class="questionRadio" type="radio" name="questionAnswer2" value="false"> Leguna Seca
+                    </form>
+                </div>
+            </div>
+
+            <div class="row" id="gameDivThree">
+                <div class="col-sm-12 d-flex justify-content-center display-4">
+                    <h3>Who is the engineer first credited with dreaming of a mid-engine Corvette</h3>
+                </div>
+
+                <div class="col-sm-12 d-flex justify-content-center">
+                    <form action="">
+                        <input class="questionRadio" type="radio" name="questionAnswer3" value="true"> Zora Arkus-Duntov
+                        <input class="questionRadio" type="radio" name="questionAnswer3" value="false"> Caroll Shelby
+                        <input class="questionRadio" type="radio" name="questionAnswer3" value="false"> Lee Iacocca
+                        <input class="questionRadio" type="radio" name="questionAnswer3" value="false"> Harley Earl
+                    </form>
+                </div>
+            </div>
+
+            <div class="row text-white" id="gameDivFour">
+                <div class="col-sm-12 d-flex justify-content-center display-4">
+                    <h3>What was the last Ferrari approved by Enzo, that was also first to hit 200mph</h3>
+                </div>
+
+                <div class="col-sm-12 d-flex justify-content-center">
+                    <form action="">
+                        <input class="questionRadio" type="radio" name="questionAnswer4" value="false"> F-50
+                        <input class="questionRadio" type="radio" name="questionAnswer4" value="false"> Enzo
+                        <input class="questionRadio" type="radio" name="questionAnswer4" value="false"> 288 GTO
+                        <input class="questionRadio" type="radio" name="questionAnswer4" value="true"> F-40
+                    </form>
+                </div>
+            </div>
+
+            <div class="row text-warning" id="gameDivFive">
+                <div class="col-sm-12 d-flex justify-content-center display-4">
+                    <h3>What brand adornes its high performance models with a four leaf clover</h3>
+                </div>
+
+                <div class="col-sm-12 d-flex justify-content-center">
+                    <form action="">
+                        <input class="questionRadio" type="radio" name="questionAnswer5" value="false"> Fiat
+                        <input class="questionRadio" type="radio" name="questionAnswer5" value="false"> Audi
+                        <input class="questionRadio" type="radio" name="questionAnswer5" value="true"> Alfa Romeo
+                        <input class="questionRadio" type="radio" name="questionAnswer5" value="false"> Honda
+                    </form>
+                </div>
+            </div>
+
+            <div class="row" id="gameDivSix">
+                <div class="col-sm-12 d-flex justify-content-center display-4">
+                    <h3>Who is the only driver to capture the Triple Crown of Motorsport</h3>
+                </div>
+
+                <div class="col-sm-12 d-flex justify-content-center">
+                    <form action="">
+                        <input class="questionRadio" type="radio" name="questionAnswer6" value="true"> Graham Hill
+                        <input class="questionRadio" type="radio" name="questionAnswer6" value="false"> Mario Andretti
+                        <input class="questionRadio" type="radio" name="questionAnswer6" value="false"> Ayrton Senna
+                        <input class="questionRadio" type="radio" name="questionAnswer6" value="false"> Dale Earnhardt
+                    </form>
+                </div>
+            </div>
+
+            <div class="row text-primary" id="gameDivSeven">
+                <div class="col-sm-12 d-flex justify-content-center display-4">
+                    <h3>What division of WRC was shut down because it was killing too many drivers</h3>
+                </div>
+
+                <div class="col-sm-12 d-flex justify-content-center">
+                    <form action="">
+                        <input class="questionRadio" type="radio" name="questionAnswer7" value="false"> JTCC
+                        <input class="questionRadio" type="radio" name="questionAnswer7" value="true"> Groupe B
+                        <input class="questionRadio" type="radio" name="questionAnswer7" value="false"> Trophy Truck
+                        <input class="questionRadio" type="radio" name="questionAnswer7" value="false"> Champ Car
+                    </form>
+                </div>
+            </div>
+        
+        
+            <div class="row text-white" id="gameDivEight">
+                <div class="col-sm-12 d-flex justify-content-center display-4">
+                    <h3>What car company was created because its owner foresaw the use of carbon fiber</h3>
+                </div>
+
+                <div class="col-sm-12 d-flex justify-content-center">
+                    <form action="">
+                        <input class="questionRadio" type="radio" name="questionAnswer8" value="false"> Koenigsegg 
+                        <input class="questionRadio" type="radio" name="questionAnswer8" value="false"> Cizeta-Moroder
+                        <input class="questionRadio" type="radio" name="questionAnswer8" value="false"> Panoz
+                        <input class="questionRadio" type="radio" name="questionAnswer8" value="true"> Pagani
+                    </form>
+                </div>
+            </div>
+
+            <div class="row" id="submitDiv">
+                <div class=" col-sm-12 d-flex justify-content-center">
+                    <button class="bg-white text-dark display-4" id="checkButton">Checkered Flag</button>
+                </div>
+            </div>
+
+            <div class="row text-success display-3">
+                <div class="col-sm-12 d-flex justify-content-center">
+                    <h1>Time Left:<span id="timeSpan"></span></h2>
+                </div>
+            </div>
+        </div>            
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./assets/trivia_CSS_JS/trivia_script.js"></script>
+</body>
+</html>
